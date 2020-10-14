@@ -1,0 +1,213 @@
+/*===================Font family=================== */
+@font-face {
+    font-family: montserrat-regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: montserrat-medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: montserrat-semiBold;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+    font-family: montserrat-bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+/*================= Global Css =================== */
+body{
+    background: var(--body-bg-color);
+    font-family: montserrat-regular;
+    font-size: 14px;
+    counter-reset: section;
+}
+
+.devider{
+    transform: rotate(53deg);
+    font-size: 11px;
+}
+.pr{
+    padding-right: 7.5px;
+}
+.pl{
+    padding-left: 7.5px;
+}
+.success{
+    color:var(--success);
+}
+.danger{
+    color:var(--danger);
+}
+.warning{
+    color:var(--warning);
+}
+.heading{
+    font-size: 22px;
+    font-family: montserrat-bold;
+    color:var(--secondary);
+}
+.emoji-icon{
+    font-size: 18px;
+}
+/*===================Header Css=================== */
+.header{
+    background-color: var(--primary);
+    color: var(--white);
+    padding:5px 0 7px;
+    font-size: 14px;
+}
+.header a{
+    color:var(--white);
+}
+.header button{
+        background: transparent;
+        border: 0;
+        text-align: left;
+        color: var(--white);
+}
+/*===================Main Wrapper CSS=================== */
+.main-wrapper{
+    padding:30px;
+}
+.topbar{
+    background: var(--white);
+    padding:10px 30px;
+}
+.topbar span{
+    display: inline-block;
+    padding-left: 8px;
+    color: var(--primary);
+}
+.cards-section{
+    padding:30px 0;
+}
+.card{
+    background: var(--white);
+    padding:15px 30px;
+    border-radius:3px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 14%);
+    margin-bottom: 15px;
+}
+.card .card-heading {
+    font-size: 18px;
+}
+.card .card-value { 
+    font-size: 26px;
+    color: var(--primary);
+    margin:8px 0;
+}
+.menu-list-section .menu-list a {
+    color: var(--black);
+    margin: 0 3px;
+}
+.menu-list-section .menu-item {
+    padding: 5px 0;
+    margin: 0 10px 10px 32px;
+}
+
+select {
+    background: var(--white);
+    border: 0;
+    padding: 9px 32px;
+    width: 160px;
+    -webkit-appearance:  none;
+    -moz-appearance:     none;
+     appearance:         none;
+     font-size: 13px;
+     border-radius: 4px;
+}
+.selectpicker {
+    margin: 0 5px;
+}
+.google-icon {
+    position: absolute;
+    font-size: 13px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+.dropdown-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+.menu-list-section {
+    margin-bottom: 15px;  
+    border-radius: 3px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 14%); 
+    background-color: var(--white);
+    padding:20px 25px 10px 30px;
+
+}
+.menu-list-section li::before {
+    counter-increment: section;
+    content: "" counter(section) "";
+    margin-left: -45px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 3px 11px 6px 12px;
+    background-color: rgba(26,143,240,0.5);
+    text-align: center;
+    color: var(--primary);
+    align-items: center;
+    font-size: 110%;
+}
+.performing-section {
+    padding: 30px 0;
+}
+.chart-wrapper{
+   background: var(--white);
+   padding: 10px;
+   border-radius: 3px;
+}
+footer {
+    margin: 20px 0 10px;
+}
+.facebook {
+    color: var(--facebook);
+    border: 1px solid var(--facebook);
+}
+.knowledge{
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+.social-icon {
+    padding-right: 5px;
+    font-size: 18px;
+}
+.slack {
+    border: 1px solid #908e8e;
+    color: var(--secondary);
+}
+.slack .social-icon{
+    color:var(--warning);
+}
+.social-links-button {
+    background: var(--white);
+    padding: 13px;
+    border-radius: 4px;
+    margin: 10px 5px;
+}
+.social-links-button:hover{  
+    text-decoration: none;
+}
+
+
+/*===================Header Css=================== */
+@media screen and (max-width: 768px){
+    .padding-0{
+        padding:0;
+    }
+    .social-links-button{
+        width: 230px;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 576px){
+    .selectpicker{
+        margin:0 5px 10px;
+    }
+}
